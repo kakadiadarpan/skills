@@ -19,15 +19,6 @@ npx skills@latest add kakadiadarpan/skills
 Select **pr-review** when prompted. The copied files are yours to customize;
 run `npx skills@latest update` when you want to pull in upstream changes.
 
-### Claude Code plugin
-
-Add this repository as a marketplace, then install its plugin:
-
-```sh
-/plugin marketplace add kakadiadarpan/skills
-/plugin install personal-agent-skills@kakadiadarpan
-```
-
 ## Available skills
 
 | Skill | What it does |
