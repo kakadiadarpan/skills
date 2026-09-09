@@ -1,0 +1,23 @@
+{
+  "skill_name": "pr-review",
+  "evals": [
+    {
+      "id": 1,
+      "prompt": "Please review the pull request for my current branch. Keep it read-only and tell me whether it is safe to merge. Focus on actual bugs, not style.",
+      "expected_output": "Pins the live PR state, examines the full diff and related context, runs practical verification where possible, and returns a concise evidence-based verdict without posting to GitHub.",
+      "files": []
+    },
+    {
+      "id": 2,
+      "prompt": "Re-review PR #482 after the author pushed a fix for the duplicate webhook delivery issue. Tell me whether the old finding is fixed, and post an inline blocking comment only if it is still broken.",
+      "expected_output": "Refreshes the PR state before reviewing, explicitly resolves the prior finding, checks adjacent retry and failure paths, avoids duplicate threads, and only posts after a final refresh if a finding remains.",
+      "files": []
+    },
+    {
+      "id": 3,
+      "prompt": "Review this PR and leave inline comments for any real issue. For each comment, use a Conventional Comment and add a details block with the evidence and minimal fix. Ignore formatting and naming issues.",
+      "expected_output": "Finds only well-supported behavioral issues, uses the requested comment structure, refreshes head and existing threads immediately before posting, and omits excluded style categories.",
+      "files": []
+    }
+  ]
+}
