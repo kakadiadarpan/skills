@@ -2,14 +2,15 @@
   "name": "personal-agent-skills",
   "version": "0.1.0",
   "private": true,
-  "description": "Personal agent skills for evidence-first pull-request reviews.",
+  "description": "Personal agent skills for coding agents.",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/kakadiadarpan/skills.git"
   },
   "license": "MIT",
   "scripts": {
-    "validate": "python scripts/validate-skills.py",
-    "package:pr-review": "python scripts/package-skill.py skills/engineering/pr-review dist"
+    "validate": "python3 scripts/validate-skills.py",
+    "package": "python3 scripts/package-skill.py",
+    "link": "bash scripts/link-skills.sh"
   }
 }
