@@ -10,13 +10,13 @@
     {
       "id": 2,
       "prompt": "Re-review PR #482 after the author pushed a fix for the duplicate webhook delivery issue. Tell me whether the old finding is fixed, and post an inline blocking comment only if it is still broken.",
-      "expected_output": "Refreshes the PR state before reviewing, explicitly resolves the prior finding, checks adjacent retry and failure paths, avoids duplicate threads, and only posts after a final refresh if a finding remains.",
+      "expected_output": "Refreshes the PR state before reviewing, explicitly resolves the prior finding, checks adjacent retry and failure paths, and avoids duplicate threads. If the finding remains, shows the exact inline comment and target line, waits for the user's approval, then refreshes the head again before posting.",
       "files": []
     },
     {
       "id": 3,
       "prompt": "Review this PR and leave inline comments for any real issue. For each comment, use a Conventional Comment and add a details block with the evidence and minimal fix. Ignore formatting and naming issues.",
-      "expected_output": "Finds only well-supported behavioral issues, uses the requested comment structure, refreshes head and existing threads immediately before posting, and omits excluded style categories.",
+      "expected_output": "Finds only well-supported behavioral issues, uses the requested comment structure, and omits excluded style categories. Shows the exact comments and target lines, waits for the user's approval, then refreshes head and existing threads immediately before posting.",
       "files": []
     }
   ]
