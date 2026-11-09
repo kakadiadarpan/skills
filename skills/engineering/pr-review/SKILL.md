@@ -7,9 +7,9 @@ description: "Review GitHub pull requests in an evidence-first, chat-first style
 
 Review the current PR, not the story around it. Find real defects, explain the consequence plainly, and keep the result easy to act on.
 
-## Required skills
+## Optional skills
 
-Before doing anything else, load @i-have-adhd, @unslop, and @show-me with the skill tool.
+Before doing anything else, load @i-have-adhd, @unslop, and @show-me with the skill tool if they are installed. Skip any that are missing.
 
 - @i-have-adhd and @unslop apply to everything you write, including GitHub comments.
 - @show-me applies to chat replies and GitHub comments. Use a diagram when a code path, data flow, or timing is easier to show than to describe. In GitHub comments, put the diagram inside the `<details>` block.
