@@ -19,6 +19,14 @@ npx skills@latest add kakadiadarpan/skills
 Select **pr-review** when prompted. The copied files are yours to customize;
 run `npx skills@latest update` when you want to pull in upstream changes.
 
+`pr-review` works best with these three skills. Installing them is highly recommended:
+
+```sh
+npx skills@latest add ayghri/i-have-adhd --skill i-have-adhd
+npx skills@latest add cursor/plugins --skill unslop
+npx skills@latest add humanlayer/skills --skill show-me
+```
+
 ## Available skills
 
 | Skill | What it does |

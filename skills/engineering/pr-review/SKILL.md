@@ -7,9 +7,17 @@ description: "Review GitHub pull requests in an evidence-first, chat-first style
 
 Review the current PR, not the story around it. Find real defects, explain the consequence plainly, and keep the result easy to act on.
 
-## Optional skills
+## Recommended skills
 
-Before doing anything else, load @i-have-adhd, @unslop, and @show-me with the skill tool if they are installed. Skip any that are missing.
+This skill is designed to run with @i-have-adhd, @unslop, and @show-me. Before doing anything else, load each one that is installed with the skill tool.
+
+If any are missing, tell the user once, at the start of the review, which ones and how to install them. Then continue the review without them.
+
+```sh
+npx skills@latest add ayghri/i-have-adhd --skill i-have-adhd
+npx skills@latest add cursor/plugins --skill unslop
+npx skills@latest add humanlayer/skills --skill show-me
+```
 
 - @i-have-adhd and @unslop apply to everything you write, including GitHub comments.
 - @show-me applies to chat replies and GitHub comments. Use a diagram when a code path, data flow, or timing is easier to show than to describe. In GitHub comments, put the diagram inside the `<details>` block.
