@@ -1,6 +1,6 @@
 ---
 name: pr-review
-description: "Review GitHub pull requests in Darpan's evidence-first, chat-first style. Use for live PR reviews and rereviews."
+description: "Review GitHub pull requests in an evidence-first, chat-first style. Use for live PR reviews and rereviews."
 ---
 
 # PR review
