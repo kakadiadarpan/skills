@@ -4,7 +4,7 @@
     {
       "id": 1,
       "prompt": "Please review the pull request for my current branch. Keep it read-only and tell me whether it is safe to merge. Focus on actual bugs, not style.",
-      "expected_output": "Pins the live PR state, examines the full diff and related context, runs practical verification where possible, and returns a concise evidence-based verdict without posting to GitHub.",
+      "expected_output": "Pins the live PR state, examines the full diff and related context, reads CI results instead of running builds, typechecks, or tests, and returns a concise evidence-based verdict without posting to GitHub.",
       "files": []
     },
     {

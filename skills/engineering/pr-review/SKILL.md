@@ -34,7 +34,7 @@ npx skills@latest add humanlayer/skills --skill show-me
 
 1. Pin the live head and base SHAs. Inspect the full diff, commit list, PR body, current checks, and unresolved review threads.
 2. Read the relevant contract, spec, service guidance, and closest working implementation. For pipeline changes, trace producer, transport, and consumer paths.
-3. Test the changed behavior when practical. Run tools with the repo's pinned toolchain, such as the Node version in `engines.node`. Separate code failures from sandbox, auth, network, dependency, or test-environment failures. A missing-package error usually means a stale install, not a PR bug.
+3. Do not run builds, typechecks, or tests. Read the PR's CI results instead. Separate code failures from flaky, auth, network, dependency, or CI-environment failures.
 4. Before a rereview or any publication, refresh the live head, base, checks, and review threads. If the head changed, do not reuse an earlier verdict.
 
 ## Findings
