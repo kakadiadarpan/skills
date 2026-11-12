@@ -15,8 +15,8 @@
     },
     {
       "id": 3,
-      "prompt": "Review this PR and leave inline comments for any real issue. For each comment, use a Conventional Comment and add a details block with the evidence and minimal fix. Ignore formatting and naming issues.",
-      "expected_output": "Finds only well-supported behavioral issues, uses the requested comment structure, and omits excluded style categories. Shows the exact comments and target lines, waits for the user's approval, then refreshes head and existing threads immediately before posting.",
+      "prompt": "Review this PR and leave inline comments for any real issue. Use Conventional Comments. Ignore formatting and naming issues.",
+      "expected_output": "Finds only well-supported issues, labels each with a Conventional Comments label and decoration, and omits excluded style categories. Shows the exact comments and target lines, waits for the user's approval, stages them as a pending review, and submits only when the user says to submit.",
       "files": []
     }
   ]
